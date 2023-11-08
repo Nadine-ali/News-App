@@ -31,7 +31,9 @@ class _home_layoutState extends State<home_layout> {
             });
           }, icon: Icon(Icons.search,color: Colors.white,size: 30,))
         ],
-        shape: RoundedRectangleBorder(borderRadius:BorderRadius.circular(20)),
+        shape: RoundedRectangleBorder(borderRadius:BorderRadius.only(
+          bottomLeft: Radius.circular(20),bottomRight: Radius.circular(20)
+        )),
         backgroundColor: Color(0xff39A552),
         title: widget.search?TextField(
           onChanged: (value) {

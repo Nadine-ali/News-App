@@ -16,8 +16,9 @@ class _article_viewState extends State<article_view> {
     return Scaffold(
       appBar:AppBar(
         toolbarHeight: 70,
-        shape: RoundedRectangleBorder(borderRadius:BorderRadius.circular(20)),
-        backgroundColor: Color(0xff39A552),
+        shape: RoundedRectangleBorder(borderRadius:BorderRadius.only(
+            bottomLeft: Radius.circular(20),bottomRight: Radius.circular(20)
+        )),        backgroundColor: Color(0xff39A552),
         title: Text("News App",style: TextStyle(
             fontSize: 30,
             fontWeight: FontWeight.bold,
